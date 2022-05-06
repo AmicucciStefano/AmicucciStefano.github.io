@@ -72,6 +72,11 @@ a:hover {
     font-size: 1.5em;
 }
 
+.div--picture > p {
+    text-align: start;
+    margin-left: 0.5em;
+}
+
 .picture {
     width: 500px;
     position: static;
@@ -83,7 +88,7 @@ a:hover {
     padding-bottom: 4em;
 }
 
-h1 .blast:hover {
+h1 .blast:hover, h2:hover {
     color: #8A4FFF;
 }
 
@@ -95,13 +100,6 @@ h1 .blast{
 h2 {
     font-size: 2.3rem;
     transition: all 0.3s ease-out;
-}
-h2:hover {
-    color: #8A4FFF;
-}
-
-p {
-    font-size: 1.6;
 }
 
 a {
@@ -122,9 +120,45 @@ i {
     margin-right: 0.5em;
 }
 
-
-@media (min-width: 1000px) {
+@media (max-width: 970px) {
     #welcome-section {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+
+    .section--projects {
+        display: block;
+    }
+    
+    .section--projects__div {
+        padding: 1em;
+    }
+
+    .div--picture {
+        display: block;
+    }
+
+    #navbar {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 640px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    .blast-root {
+        font-size: 0.7em;
+        width: 100%;
+        padding:0;
+    }
+
+    #welcome-section {
+        padding-top: 2.2em;
+        padding-left: 1em;
+        padding-right: 0;
+    }
+    
+    .picture {
+        max-width: 250px;
     }
 }
