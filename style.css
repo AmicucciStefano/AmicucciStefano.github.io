@@ -12,19 +12,12 @@ body, h1 {
     margin: 0;
 }
 
-.all {
-    position: ;
-}
-
 header {
-   display: flex;
-   width: 50%;
    text-align: end;
 }
 
 #navbar {
     font-size: 1.8rem;
-    margin: 0;
     margin-top: 0;
     display: flex;
     position: fixed;
@@ -39,8 +32,6 @@ header {
     color: #8A4FFF;
     display: block;
     padding: 1rem;
-    text-align: center;
-    float: right;
     transition: all 0.3s ease-out;
 }
 
@@ -50,8 +41,13 @@ a:hover {
 
 #welcome-section {
     font-size: 3rem;
-    width: 100%;
-    padding: 2em;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #projects {
@@ -63,6 +59,11 @@ a:hover {
 .section--projects {
     display: flex;
     justify-content: space-evenly;
+    height: 30vh;
+}
+
+.section--projects__div {
+    margin-top: 3em;
 }
 
 .div--picture {
