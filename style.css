@@ -64,6 +64,16 @@ a:hover {
     align-items: center;
 }
 
+.section--projects__div a {
+   display: block;
+   margin-bottom: 1em;
+   text-align: center;
+}
+
+.page--logo {
+    width: 200px;
+}
+
 .div--picture {
     display: flex;
     justify-content: space-between;
