@@ -40,7 +40,7 @@ a:hover {
 }
 
 #welcome-section {
-    font-size: 3rem;
+    font-size: 5rem;
     width: 80%;
     height: 100vh;
     display: flex;
@@ -49,6 +49,7 @@ a:hover {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 #projects {
     width: 80%;
@@ -60,10 +61,7 @@ a:hover {
     display: flex;
     justify-content: space-evenly;
     height: 30vh;
-}
-
-.section--projects__div {
-    margin-top: 3em;
+    align-items: center;
 }
 
 .div--picture {
@@ -130,10 +128,6 @@ i {
         display: block;
     }
     
-    .section--projects__div {
-        padding: 1em;
-    }
-
     .div--picture {
         display: block;
     }
