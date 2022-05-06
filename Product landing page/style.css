@@ -1,0 +1,164 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:sans-serif, Arial, Helvetica;
+    margin: 0;
+    background-image:  linear-gradient( 115deg, rgba(137, 137, 228, 0.8), rgba(231, 228, 228, 0.7) ),url("https://images.pexels.com/photos/8862351/pexels-photo-8862351.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: linear-gradient(305deg, rgba(137, 137, 228, 0.8), rgba(231, 228, 228, 0.7) );
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar--a {
+    height: 2.2em;
+    min-width: 360;
+    color: black;
+    padding: 0.5em;
+    margin: 0.4em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar--a:hover {
+    color:white;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.all {
+    width: 90%;
+}
+
+.logo {
+    width: 50%;
+    min-width: 50px;
+}
+
+.title {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 4em;
+}
+
+.video {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    margin-top:2em;
+    margin-bottom: 1em;
+}
+
+.block--beer {
+    text-align: center;
+}
+
+.beerimg {
+    display: flex;
+    align-content: center;
+    width: 80%;
+    border-radius: 20px;
+}
+
+span {
+    font-weight: 700;
+}
+
+.block--contact {
+    margin-top: 3em;
+}
+
+.links {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.fa-brands {
+    display: flex;
+    align-self: center;
+    margin-right: 0.4em;
+}
+
+@media (min-width:550px) and (max-width: 800px) {
+    .beerimg {
+        max-width:60% ;
+        max-height: 400px;
+    }
+
+    .flex {
+        display: none;
+    }
+
+    .products-items {
+        display: flex;
+    }
+    
+    .video {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .logo {
+        max-width: 190px;
+    }
+}
+
+@media (min-width:800px) {
+    .logo {
+        max-width: 190px;
+    }
+
+    .beerimg {
+        max-width:60% ;
+        max-height: 400px;
+    }
+
+    .flex {
+        display: none;
+    }
+
+    .products-items {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .video {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        height: 100%;
+    }
+}
