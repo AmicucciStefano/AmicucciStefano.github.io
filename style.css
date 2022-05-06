@@ -8,19 +8,18 @@
     box-sizing: border-box;
 }
 
-body {
+body, h1 {
     margin: 0;
 }
 
 .all {
-    text-align: center;
-    position: relative;
+    position: ;
 }
 
 header {
    display: flex;
-   width: 100%;
-   justify-content: flex-end;
+   width: 50%;
+   text-align: end;
 }
 
 #navbar {
@@ -36,6 +35,7 @@ header {
 
 .nav-link {
     text-decoration: none;
+    position: sticky;
     color: #8A4FFF;
     display: block;
     padding: 1rem;
@@ -55,16 +55,32 @@ a:hover {
 }
 
 #projects {
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
 }
 
-h1{
-    margin: 0;
-    position: relative;
-    text-size-adjust: 100%;
-    letter-spacing: normal;
+.section--projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.div--picture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.picture {
+    width: 500px;
+    position: static;
+}
+
+.section--contact {
+    text-align: start;
+    padding-top: 2em;
+    padding-bottom: 4em;
 }
 
 h1 .blast:hover {
@@ -94,18 +110,16 @@ a {
     transition: all 0.3s ease-out;
 }
 
-#projects {
-
-}
-
-#about-me {
-
-}
-
 .profiles-link {
     justify-content: flex-start;
     align-items: flex-start;
     margin-right: 10px;
+}
+
+i {
+    display: flex;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
 }
 
 

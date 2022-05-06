@@ -102,6 +102,15 @@ span {
     display: flex;
     margin-top: 1em;
     margin-bottom: 1em;
+    color: antiquewhite;
+}
+
+h1, h2 {
+    color: rgb(246, 255, 69);
+}
+
+.links > a {
+    color: rgb(246, 255, 69);
 }
 
 .fa-brands {
