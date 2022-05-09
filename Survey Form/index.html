@@ -16,73 +16,74 @@
         </header>
         <form class="survey-form box">
             <div class="box--form">
-                <label id="label1" for="name">Name</label>
-                    <input class="inputspace" type="name" placeholder="Enter your name" required>
+                <label id="name" class="label1" for="name">Name</label>
+                <input id="name" class="inputspace" type="name" placeholder="Enter your name" required>
             </div>
             <div class="box--form">
-                <label id="label1" for="email">Email</label>
-                <input class="inputspace" type="email" placeholder="Enter your email" required>
+                <label id="email" class="label1" for="email">Email</label>
+                <input id="email" class="inputspace" type="email" placeholder="Enter your email" required>
             </div>
             <div class="box--form">
-                <label id="label1" for="age">Age</label>
-                <input class="inputspace" type="age" placeholder="Enter your age" min="0" max="120" required>
+                <label id="age" class="label1" for="age">Age</label>
+                <input id="age" class="inputspace" type="age" placeholder="Enter your age" min="0" max="120" required>
             </div>
             <div class="box--form">
                 <label for="brand">which smartphone brand do you believe is better?</label>
-                <select class="br inputspace" name="brand" required>
-                    <option value="samsung">Samsung</option>
-                    <option value="iphone">Iphone</option>
-                    <option value="xiaomi">Xiaomi</option>
-                    <option value="other">other</option>
+                <select id="brand" class="br inputspace" name="brand" required>
+                    <option label="Samsung" value="samsung">Samsung</option>
+                    <option label="Iphone" value="iphone">Iphone</option>
+                    <option label="Xiaomi" value="xiaomi">Xiaomi</option>
+                    <option label="Other" value="other">other</option>
                 </select>
             </div>
             <div class="box--form options">
-                <label for="recommend">would you recommend any of this brands?</label>
+                <span>would you recommend any of this brands?</span>
                 <div class="br">
-                    <input type="radio" name="recommend" value="yes" checked>
                     <label for="yes">yes</label>
+                    <input type="radio" id="yes" name="recommend" value="yes" checked>
                 </div>
 
                 <div class="br">
-                    <input type="radio" name="recommend" value="no">
                     <label for="no">no</label>
+                    <input type="radio" id="no" name="recommend" value="no">
                 </div>
 
                 <div class="br">
-                    <input type="radio" name="recommend" value="maybe">
                     <label for="maybe">maybe</label>
+                    <input type="radio" id="maybe" name="recommend" value="maybe">
                 </div>
             </div>
             <div class="box--form options">
-                <label for="things you like">What things would you want for the smartphone to have?</label>
+               <span>What things would you want for the smartphone to have?</span>
 
                 <div class="br">
-                    <input type="checkbox" name="things you like" value="goodcamera">
                     <label for="goodcamera">A good camera</label>
+                    <input type="checkbox" id="goodcamera" name="things you like" value="goodcamera">
                 </div>
 
                 <div class="br">
-                    <input type="checkbox" name="things you like" value="goodspeaker">
                     <label for="goodspeaker">A Good Speaker</label>
+                    <input type="checkbox" id="goodspeaker" name="things you like" value="goodspeaker">
                 </div>
 
-
                 <div class="br">
-                    <input type="checkbox" name="things you like" value="Ram">
                     <label for="Ram">A Lot of Memory Ram</label>
+                    <input type="checkbox" id="Ram" name="things you like" value="Ram">
                 </div>
 
                 <div class="br">
-                    <input type="checkbox" name="things you like" value="microprocessor">
                     <label for="microprocessor">A Good Microprocessor</label>
+                    <input type="checkbox" id="microprocessor" name="things you like" value="microprocessor">
                 </div>
             </div>
             <div class="box--form textarea">
                 <div>
                     <label for="comments"> Leave any comment here:</label>
+                    <textarea id="comments" name="any thoughts about freecodecamp" cols="60" rows="12"
+                        placeholder="Comment here..."></textarea>
                 </div>
-                <textarea name="any thoughts about freecodecamp" cols="60" rows="12" placeholder="Comment here..."></textarea>
-                <input class="button" type="submit" value="Submit">
+                <label for="submit-button"></label>
+                <input class="button" id="submit-button" type="submit" value="Submit">
             </div>
         </form>
     </section>
