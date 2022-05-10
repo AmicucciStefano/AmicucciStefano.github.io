@@ -134,6 +134,7 @@ i {
 @media (max-width: 970px) {
     #welcome-section {
         font-size: 3rem;
+        height: 100vh;
     }
 
     .section--projects {
@@ -158,6 +159,7 @@ i {
 
     #welcome-section {
         font-size: 3rem;
+        height: 100vh;
     }
 
     h2 {
