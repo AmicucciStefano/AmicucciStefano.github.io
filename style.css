@@ -49,8 +49,27 @@ a:hover {
     margin-right: auto;
     padding-top: 5rem;
     padding-bottom: 8rem;
+    animation: slideMe 1.5s;
 }
 
+@keyframes slideMe {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    90%{
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
 
 #projects {
     width: 80%;
@@ -141,6 +160,7 @@ i {
         display: block;
         height: 100%;
         text-align: center;
+        animation-name: ;
     }
     
     .div--picture {

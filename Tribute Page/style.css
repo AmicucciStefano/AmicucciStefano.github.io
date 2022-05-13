@@ -48,9 +48,10 @@ h1, h2 {
     font-family: 'Noto Serif', serif;
 }
 
-.block--text__p {
-    text-align: start;
-    padding: 2em;
+.block--text {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .title--img {
@@ -86,13 +87,47 @@ h1, h2 {
     height: 150px;
 }
 
+.linktoinfo {
+    text-decoration: underline;
+}
+
 .footer {
     padding-bottom: 3em;
     padding-left: 2em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer, a {
+    text-decoration: ;
 }
 
 a:hover {
-    color:#BF0603;
+    color:#7D5BA6;
+}
+
+.section--contact {
+    text-align: end;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    
+}
+
+.section--contact, a {
+    text-decoration: none;
+}
+
+.profiles-link {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+i {
+    display: flex;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
 }
 
 @media (max-width:1300px) {
