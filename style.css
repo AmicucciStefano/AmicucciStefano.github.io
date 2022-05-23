@@ -93,7 +93,7 @@ ul {
 /*empieza el hero con el welcome section */
 
 .hero {
-    background-image: url(IMG/fondo\ 2.jpg);
+    background-image: url(IMG/hero.jpg);
     background-size:cover;
 }
 
