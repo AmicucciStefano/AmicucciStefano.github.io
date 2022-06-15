@@ -254,13 +254,13 @@ a:hover {
     outline: none;
 }
 
-/* .inputsubject {
+.inputsubject {
     width: 445px;
     height: 50px;
     margin-top: 1rem;
     padding-left: 1rem;
     outline: none;
-} */
+} 
 
 .textarea {
     width: 100%;
@@ -428,10 +428,10 @@ a:hover {
         padding-left: 1rem;
     }
 
-   /*  .inputsubject {
+    .inputsubject {
         min-width: 315px;
         width: 315px;
-    } */
+    }
 
     .profiles-link {
         font-size: 20px;
