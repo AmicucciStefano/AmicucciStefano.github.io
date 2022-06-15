@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Amicucci, Stefano, AmicucciStefano, projects">
+    <meta name="author" content="Amicucci Stefano">
+    <title>Portafolio Amicucci Stefano</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/7088469d41.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/33ad61f599.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Document</title>
 </head>
 
@@ -21,13 +29,13 @@
                 <img src="IMG/logo bien hecho 3.webp" class="logo" alt="logo" />
                 <ul class="link">
                     <li>
-                        <a href="index.html">home</a>
+                        <a href="#">home</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#aboutmeid">About me</a>
                     </li>
                     <li>
                         <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#aboutmeid">about me</a>
                     </li>
                     <li>
                         <a class="nav-link" href="#contact">Contact</a>
@@ -40,13 +48,13 @@
             <!-- links -->
             <ul class="links">
                 <li>
-                    <a href="index.html">home</a>
+                    <a href="#">home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#aboutmeid">About me</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a class="nav-link" href="#aboutmeid">about me</a>
                 </li>
                 <li>
                     <a class="nav-link" href="#contact">Contact</a>
@@ -83,7 +91,7 @@
         <!--this id is for the a in the navbar to call here-->
         <div class="hero--projects">
             <section id="projects" class="center">
-                <h2>My Portafolio</h2>
+                <h2>My Projects</h2>
                 <!--this is the real section-projects where i edit the css-->
                 <section class="section--projects">
                     <div class="section--projects__div">
@@ -105,24 +113,36 @@
                 </section>
             </section>
 
-            <footer>
-                <section class="section--contact center">
-                    <h2 id="contact">Contact me</h2>
-                    <div>
-                        <i class="section--contact-icons fa-brands fa-github"></i>
-                        <a class="profiles-link" href="https://github.com/AmicucciStefano" target="_blank">GitHub</a>
+            <footer class="footer--contact center">
+                <h2 id="contact">Contact me</h2>
+                <div class="displayflex">
+                    <div class="form">
+                        <form action="https://formsubmit.co/amicuccistefano@gmail.com" method="POST">
+                            <input class="inputname" type="text" name="name" placeholder="Name" required>
+                            <input class="inputemail" type="email" name="email" placeholder="Email" required>
+                            <input class="inputsubject" type="text" name="subject" placeholder="Subject" required>
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="basic">
+                            <textarea class="textarea" placeholder="Message..." required></textarea>
+                            <button class="buttonsubmit" type="submit">Send</button>
+                        </form>
                     </div>
-                    <div>
-                        <i class="section--contact-icons fa-brands fa-instagram"></i>
-                        <a class="profiles-link" href="https://www.instagram.com/stefano_amicucci"
-                            target="_blank">Instagram</a>
-                        </di>
+                    <div class="contactlogos">
+                        <div>
+                            <i class="section--contact-icons fa-brands fa-github"></i>
+                            <a class="profiles-link" href="https://github.com/AmicucciStefano" target="_blank">GitHub</a>
+                        </div>
+                        <div>
+                            <i class="section--contact-icons fa-brands fa-instagram"></i>
+                            <a class="profiles-link" href="https://www.instagram.com/stefano_amicucci"
+                                target="_blank">Instagram</a>
+                        </div>
                         <div>
                             <i class="section--contact-icons fa-brands fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/amicuccistefano/" target="_blank">Linkedin</a>
-                        </div>
-                        <p>amicuccistefano@gmail.com</p>
-                </section>
+                            <a class="profiles-link" href="https://www.linkedin.com/in/amicuccistefano/" target="_blank">Linkedin</a>
+                        </di>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
