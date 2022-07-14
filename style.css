@@ -1,3 +1,4 @@
+/* clases de cosas generales */
 :root {
     background-color:#0A0F0D;
     color: whitesmoke;
@@ -14,128 +15,6 @@ body, h1 {
     margin: 0;
 }
 
-/*
-=============== 
-Navbar
-===============
-*/
-.nav-header {
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-}
-
-nav {
-    background-color: #0A0F0D;
-    box-shadow: 0px 20px 20px 0px #00000099; 
-    position: absolute;
-    width:100%;
-}
-
-.link { 
-    display: flex;
-}
-
-.link li {
-    font-size: 1.5rem;
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
-
-.nav-toggle {
-    display: none;
-}
-
-
-.nav-toggle:hover {
-    transform:rotate(180deg);
-}
-
-.logo {
-    width: 70px;
-    margin-left: 2rem;
-    padding-top: 0.5rem;
-}
-
-.links a {
-    font-size: 1rem;
-    text-transform: capitalize;
-    display: block;
-    padding: 0.5rem 1rem;
-    color: #75DDDD;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-.links a:hover {
-    padding-left: 1.5rem;
-}
-
-.links {
-    height: 0;
-    overflow: hidden;
-    position: absolute;
-}
-.show-links {
-    height: 13rem;
-    background-color: #00000099;
-    width: 100%;
-    transition: all .3s ease-in-out;
-    padding-top: 0.5rem;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-}
-
-/*termina la navbar*/
-
-/*empieza el hero con el welcome section */
-
-.hero {
-    background-image: url(IMG/hero.jpg);
-    background-size:cover;
-}
-
-#welcome-section {
-    font-size: 4.5rem;
-    width: 80%;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 7rem;
-    padding-bottom: 8rem;
-    animation: slideMe 1.5s;
-}
-
-/*keyframes para hacer el slide del titulo con un mini rebote*/
-@keyframes slideMe {
-    0% {
-        transform: translateX(-900px);
-    }
-
-    90%{
-        transform: translateX(20px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
-
-h1 {
-    display: inline-block;
-    transition: all 0.3s ease-out;
-    text-shadow:3px 3px 4px #00000099; ;
-}
-
-/*termina la seccion welcome section */
-
-/* clases de cosas generales */
 .all {
     box-shadow: 0px -20px 20px 0px #00000099; 
     position: absolute;
@@ -163,6 +42,97 @@ a:hover {
     color: #fd6231;
 }
 /*terminan las clases generales*/
+
+/*Empieza el Navbar*/
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+nav {
+    background-color: #0A0F0D;
+    box-shadow: 0px 20px 20px 0px #00000099; 
+    position: absolute;
+    width:100%;
+}
+
+.link { 
+    display: flex;
+}
+
+.link li {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle:hover {
+    transform:rotate(180deg);
+}
+
+.logo {
+    width: 70px;
+    margin-left: 2rem;
+    padding-top: 0.5rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+/*termina la navbar*/
+
+/*empieza el hero con el welcome section */
+
+.hero {
+    background-image: url(IMG/hero.jpg);
+    background-size:cover;
+}
+
+#welcome-section {
+    font-size: 4.5rem;
+    width: 80%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 7rem;
+    padding-bottom: 8rem;
+    animation: slideMe 1.5s;
+}
+
+.subtitle{
+    font-size: 45px;
+}
+
+/*keyframes para hacer el slide del titulo con un mini rebote*/
+@keyframes slideMe {
+    0% {
+        transform: translateX(-900px);
+    }
+
+    90%{
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+h1 {
+    display: inline-block;
+    transition: all 0.3s ease-out;
+    text-shadow:3px 3px 4px #00000099;
+}
+
+/*termina la seccion welcome section */
 
 /* empieza seccion about me */
 #aboutmeid {
@@ -252,6 +222,7 @@ a:hover {
     height: 50px;
     padding-left: 1rem;
     outline: none;
+    color:  #0A0F0D;;
 }
 
 .inputsubject {
@@ -260,6 +231,7 @@ a:hover {
     margin-top: 1rem;
     padding-left: 1rem;
     outline: none;
+    color:  #0A0F0D;;
 } 
 
 .textarea {
@@ -280,6 +252,13 @@ a:hover {
     margin-top: 2rem;
     border: 1px solid #75DDDD;
     cursor: pointer;
+    font-weight: bold;
+}
+
+.buttonsubmit:hover {
+    background-color: white;
+    color: #0A0F0D;
+    transition: 0.5s;
 }
 
 .contactlogos {
@@ -306,6 +285,10 @@ a:hover {
 @media (max-width: 1200px) {
     h1 {
         font-size:5.8rem;
+    }
+
+    .subtitle {
+        font-size: 35px;
     }
 
     .aboutme--div--picture {
@@ -339,8 +322,32 @@ a:hover {
         display: block;
     }
 
-    .link li {
+    .link {
         display: none;
+    }
+
+    .show-links {
+        display: block;
+        position: absolute;
+        top: 73px;
+        background-color: #00000099;
+        width: 100%;
+        transition: all .3s ease-in-out;
+    }
+
+    .link a {
+        font-size: 1rem;
+        text-transform: capitalize;
+        display: block;
+        padding: 0.5rem 1rem;
+        color: #75DDDD;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+    
+    .link a:hover {
+        padding-left: 1.5rem;
+        color: #fd6231;
     }
     
     h1 {
@@ -375,6 +382,10 @@ a:hover {
     .contactlogos > div {
         margin-right: 1rem;
     }
+
+    .section--contact-icons {
+        margin: 0;
+    }
 }
 
 @media (max-width: 600px) {
@@ -387,7 +398,11 @@ a:hover {
     }
 
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 25px;
     }
 
     h2 {
@@ -400,9 +415,10 @@ a:hover {
 
     .aboutme--div--picture {
         height: 400px;
-        width: 320px;
+        width: 300px;
         background-size: 320px;
-        min-width: 320px;
+        min-width: 300px;
+
     }
 
     .aboutme--div--picture:hover {
@@ -418,19 +434,19 @@ a:hover {
     }
 
     .textarea {
-        min-width: 315px;
-        width: 315px;
+        min-width: 300px;
+        width: 300px;
     }
    
     .inputname, .inputemail {
-        min-width: 155px;
-        width: 155px;
+        min-width: 147.5px;
+        width: 147.5px;
         padding-left: 1rem;
     }
 
     .inputsubject {
-        min-width: 315px;
-        width: 315px;
+        min-width: 300px;
+        width: 300px;
     }
 
     .profiles-link {
